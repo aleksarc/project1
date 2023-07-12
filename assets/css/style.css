@@ -85,18 +85,31 @@ body {
 
 /* projects */
 
+#projects-carrousel {
+    width: 100%;
+    position: relative;
+}
+
 .projects {
     border-style: dashed;
-    margin: 10px 250px 10px 250px;
+    width: 240px;
     text-align: left;
-    padding: 10 10 10 10;
+    display: inline-block;
+}
+
+.projects>h3 {
+    text-align: center;
+}
+
+.projects>p {
+    margin-left: 10px;
 }
 
 .thumbnail {
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
     width: 150px;
+    margin: 0 15% 0 15%;
 }
 
 /* footer */
@@ -109,27 +122,34 @@ footer {
 
 #footer-left {
     width: 33%;
+    height: 100px;
     float: left;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 #footer-center {
     width: 33%;
-    display: inline-block;
+    height: 100px;
     text-align: center;
-    margin-top: 15px;
+    margin: 0 auto;
+    display: inline-block;
 }
 
 #footer-right {
     width: 32%;
-    display: inline-block;
+    height: 100px;
     text-align: right;
-    margin-top: 15px;
+    margin-top: 30px;
+    display: inline-block;
+
 }
 
 #footer-right>span {
     font-size: 180%;
     display: inline;
     letter-spacing: 50px;
+}
+
+.social-netowrk-icons {
     color: black;
 }
