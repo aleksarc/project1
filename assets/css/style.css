@@ -83,25 +83,18 @@ body {
     position: relative;
 }
 
-/* projects */
+/* gallety - projects */
 
 #projects-carrousel {
     width: 100%;
     height: auto;
+    margin-top: 150px;
 }
 
 .projects {
     width: 240px;
-    text-align: left;
     display: inline-block;
-}
-
-.projects>h3 {
     text-align: center;
-}
-
-.projects>p {
-    margin-left: 10px;
 }
 
 .thumbnail {
@@ -116,10 +109,11 @@ body {
 #tools-level {
     width: 100%;
     height: auto;
+    margin-top: 150px;
 }
 
-#tools-level>h4 {
-    text-align: center;
+#tools-level>h3 {
+    text-align: left;
 }
 
 /* REF: align content within a div https: //stackoverflow.com/questions/7926540/css-center-content-inside-div */
