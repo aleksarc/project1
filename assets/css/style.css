@@ -113,6 +113,15 @@ header {
     width: 100%;
     height: auto;
     margin-top: 150px;
+    text-align: center;
+}
+
+#projects-carrousel>h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #363636;
+    color: #5b5b5b;
 }
 
 .projects {
@@ -124,7 +133,7 @@ header {
 .thumbnail {
     border: 1px solid #ddd;
     border-radius: 4px;
-    width: 150px;
+    width: 240px;
     margin: 0 15% 0 15%;
 }
 
@@ -134,10 +143,8 @@ header {
     width: 100%;
     height: auto;
     margin-top: 150px;
-}
-
-#tools-level>h3 {
     text-align: left;
+    margin-left: 30px;
 }
 
 /* REF: align content within a div https: //stackoverflow.com/questions/7926540/css-center-content-inside-div */
