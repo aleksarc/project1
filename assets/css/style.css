@@ -30,7 +30,7 @@ body::after {
     left: 0;
     bottom: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 }
 
@@ -38,12 +38,13 @@ body::after {
 
 header {
     position: fixed;
-    height: 110px;
+    height: 115px;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #faf8f8;
+    background-color: #8fa0c8;
     padding: 10px;
+    box-shadow: 5px 5px 5px #888888;
 }
 
 /* logo */
@@ -52,7 +53,7 @@ header {
     width: 150px;
     height: 120px;
     margin-left: 30px;
-    margin-top: -5px;
+    margin-top: -7px;
     float: left;
 }
 
@@ -98,9 +99,10 @@ header {
     width: 100%;
     height: 150px;
     text-align: center;
-    color: black;
-    text-shadow: 1px 1px 1px #888686;
+    color: #585757;
+    text-shadow: 1px 1px 5px #888686;
     margin-top: 50px;
+    font-size: x-large;
 }
 
 #hero-text>h3 {
@@ -109,31 +111,40 @@ header {
 
 /* gallety - projects */
 
-#projects-carrousel {
+#projects-pool {
     width: 100%;
     height: auto;
     margin-top: 150px;
     text-align: center;
 }
 
-#projects-carrousel>h2 {
+#projects-pool>h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px #363636;
+    text-shadow: 1px 1px 5px #363636;
     color: #5b5b5b;
+    font-size: xx-large;
 }
 
 .projects {
-    width: 240px;
+    width: 440px;
     display: inline-block;
     text-align: center;
+    margin-top: 40px;
+}
+
+.projects>p {
+    padding-left: 80px;
+    font-size: x-large;
+    margin-top: 33px;
+    text-align: left;
 }
 
 .thumbnail {
     border: 1px solid #ddd;
     border-radius: 4px;
-    width: 240px;
+    width: 400px;
     margin: 0 15% 0 15%;
 }
 
