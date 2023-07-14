@@ -38,13 +38,13 @@ body::after {
 
 header {
     position: fixed;
-    height: 115px;
+    height: 80px;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #8fa0c8;
+    background-color: #faf8f8;
     padding: 10px;
-    box-shadow: 5px 5px 5px #888888;
+    box-shadow: 2px 2px 5px #888888;
 }
 
 /* logo */
@@ -88,15 +88,28 @@ header {
 /* hero section */
 
 #hero-outer {
-    width: 100%;
-    height: auto;
-    /* overflow: hidden; not needed if I'm not using the hero image */
-    margin-top: 240px;
+    text-align: center;
+}
+
+/* REF: source W3Schools https://www.w3schools.com/howto/howto_css_hero_image.asp */
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 #hero-text {
     font-family: 'Calligraffitti', cursive;
-    width: 100%;
+    width: 1960px;
     height: 150px;
     text-align: center;
     color: #585757;
@@ -182,6 +195,53 @@ header {
     height: 40px;
 }
 
+
+/* contact */
+
+#contact-details {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#contact-details-header>h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px #363636;
+    color: #5b5b5b;
+    font-size: xx-large;
+}
+
+#contact-details-header>p {
+    padding-left: 80px;
+    font-size: x-large;
+    margin-top: 33px;
+    text-shadow: 1px 1px 5px #363636;
+}
+
+.contact-items {
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.contact-items>span {
+    font-size: 180%;
+}
+
+.contact-items>p {
+    text-shadow: 1px 1px 2px #363636;
+}
+
+.contact-items>i,
+a {
+    color: black;
+}
+
+
 /* footer */
 
 footer {
@@ -203,6 +263,10 @@ footer {
     text-align: center;
     margin: 0 auto;
     display: inline-block;
+}
+
+#footer-center>span {
+    font-size: large;
 }
 
 #footer-right {
